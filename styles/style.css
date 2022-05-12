@@ -1,0 +1,1103 @@
+
+/********************************
+Common Styles
+*********************************/
+
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+body {
+
+	color: #565252;
+	font-family: 'Georgia', serif;
+	font-weight: 400;
+	font-size: 20px;
+	text-rendering: optimizeLegibility;
+
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/wedding-rings-marry-gold-jewellery-before-romance-deco-white.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: cover; /* Современные браузеры */
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+  float: left;
+  padding: 3%;
+}
+
+h1 {
+	margin: 0;
+}
+
+h2 {
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	word-spacing: 2px;
+	text-align: center;
+	margin-bottom: 30px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+h2:after {
+	display: block;
+	height: 3px;
+	background-color: #800000;
+	content: " ";
+	width: 150px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+h3 {
+	font-weight: 300;
+	text-transform: initial;
+	letter-spacing: 1px;
+	word-spacing: 2px;
+	text-align: center;
+	font-size: 100%;
+	margin-bottom: 30px;
+	margin-top: 10px;
+	font-style: italic;
+}
+
+section {
+	padding: 50px 0;
+	clear: both;
+}
+
+.float-clearing {
+	zoom: 1;
+}
+
+.float-clearing:after {
+	zoom: 1;
+	content: " ";
+	clear: both;
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+
+section p,
+#contact-form {
+	font-size: 85%;
+}
+
+/********************************
+Header Styles
+*********************************/
+
+header {
+  background-image: -webkit-linear-gradient(rgba(0, 0, 128, 0.6), rgba(188,143,143, 0.6)), url(../images/header-text.JPG);
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+#header-text {
+	padding-top: 200px;
+}
+
+#header-title {
+	max-width: 100%;
+	margin-left: 8.33%;
+	padding: 5px;
+	text-transform: uppercase;
+	color: #Fff;
+	opacity: 0.8;
+	letter-spacing: 0.179487em;
+	font-size: 3.5vw;
+    line-height: 4.0vw;
+    font-weight: 600;
+    font-style: oblique;
+    text-align: center;
+}
+
+#header-title-1 {
+	max-width: 100%;
+	margin-left: 8.33%;
+	padding: 5px;
+	text-transform: unset;
+	color: #Fff;
+	opacity: 0.8;
+	letter-spacing: 0.179487em;
+	font-size: 2.5vw;
+    line-height: 3.0vw;
+    font-weight: 200;
+    font-style: italic;
+    text-align: center;
+}
+
+#header-text h5 {
+	opacity: 1;
+	font-size: 2em;
+}
+
+#header-buttons {
+	margin-top: 20px;
+	margin-left: 8.33%;
+	padding: 15px;
+	text-align: center;
+
+}
+
+#logo-text {
+	float: left;
+}
+
+#logo-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 60px;
+	width: auto;
+	float: left;
+	margin-left: 10px;
+	margin-top: 5px;
+	border: 0px solid #fff;
+	border-radius: 50px;
+}
+
+#main-nav {
+	float: right;
+	list-style: none;
+}
+
+#main-nav li {
+	display: inline-block;
+	margin-right: 30px;
+	font-size: 0.8em;
+}
+#main-nav li a:link,
+#main-nav li a:visited {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #Fff;
+	opacity: 0.9;
+}
+
+#main-nav li a:hover,
+#main-nav li a:active
+{
+	opacity: 1;
+}
+
+#sticky-nav #main-nav li a:hover,
+#sticky-nav #main-nav li a:active {
+	opacity: 1;
+	border-bottom: 2px solid #800000;
+	transition: 0.3s;
+
+}
+
+#sticky-nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-image: url(../images/IMG_1332.jpg);
+	background-size: cover;
+	z-index: 999;
+	box-shadow: 0 2px 2px #eae3e3;
+}
+
+#sticky-nav #main-nav li a:link,
+#sticky-nav #main-nav li a:visited {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #800000;
+	opacity: 1;
+	margin-top: -5px;
+
+
+}
+
+#sticky-nav #logo-image {
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+#sticky-nav #logo-text a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #0A21ED;
+	letter-spacing: 8px;
+	padding-left: 30px;
+	margin-left: 50px;
+}
+
+#sticky-nav .mobile-nav-icon i {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: #800000;
+	margin-right: 20px;
+	margin-top: 10px;
+}
+
+#logo-text a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #81E0FD;
+	letter-spacing: 8px;
+	padding-left: 30px;
+	margin-left: 50px;
+}
+
+nav {
+	height: 70px;
+	padding: 25px;
+}
+
+.mobile-nav-icon {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin-right: 10px;
+	margin-top: 10px;
+	cursor: pointer;
+	display: none;
+}
+
+.mobile-nav-icon i {
+	font-size: 200%;
+	color: #Fff;
+}
+
+/********************************
+Button Styles
+*********************************/
+
+.button:link,
+.button:visited,
+ input[type=submit] {
+	display: inline-block;
+	padding: 10px 30px;
+	text-decoration: none;
+	color: #Ffff;
+	font-weight: 300;
+	border-radius: 150px;
+	-webkit-transition: background-color 0.3s, border 0.3s;
+	-o-transition: background-color 0.3s, border 0.3s;
+	transition: background-color 0.3s, border 0.3s;
+}
+
+.button-order:link,
+.button-order:visited,
+ input[type=submit] {
+	border: 1px solid #Ffff;
+}
+
+.button-more:link,
+.button-more:visited {
+	border: 1px solid #FFE4E1;
+}
+
+.button:hover,
+.button:active,
+ input[type=submit]:hover,
+ input[type=submit]:active {
+	background:#CD853F;
+}
+
+.button-order:hover,
+.button-order:active,
+ input[type=submit]:hover,
+ input[type=submit]:active {
+	border: 1px solid #081abc;
+}
+
+.button-more:hover,
+.button-more:active {
+	border: 1px solid #081abc;
+}
+
+
+/********************************
+time Styles
+******************************/
+
+
+#time {
+	text-align: center;
+	background-size: cover;
+    color: #696969;
+    background-image: -webkit-linear-gradient(rgba(188,143,143, 0.7), rgba(0, 0, 128, 0.6));
+	background-image: -o-linear-gradient(rgba(188,143,143, 0.7),  rgba(0, 0, 128, 0.6));
+	background-image: linear-gradient(rgba(188,143,143, 0.7),  rgba(0, 0, 128, 0.6));
+    /*-moz-text-shadow: 0 -1px 0 #000;
+    -webkit-text-shadow: 0 -1px 0 #000;
+    text-shadow: 0 -1px 0 #000;*/
+}
+
+
+#time h3 {
+	color: #fff;
+	font-size: 150%;
+}
+
+
+#CDT {
+    font-size: 60px;
+    color: #Fff;
+    margin: 2px 0 0px;
+    font-weight: bold;
+}
+
+#CDT .number-wrapper {
+    margin: 20px;
+    /*-moz-box-shadow: 0 5px 8px #000000;
+    -webkit-box-shadow: 0 5px 8px #000000;
+    box-shadow: 0 5px 8px #000000;*/
+   	position: relative;
+}
+
+#CDT .number {
+	font-size: 150%;
+	margin-bottom: 5px;
+	border-right: 3px solid #fff;
+
+}
+
+
+/*#CDT .number {
+    display: inline-block;
+    *display: inline;
+    *zoom: 5;
+    background: #000;
+    background-image: linear-gradient(bottom, #000000 2%, #3c3c3c 50%, #000000 100%);
+    background-image: -o-linear-gradient(bottom, #000000 2%, #3c3c3c 50%, #000000 100%);
+    background-image: -moz-linear-gradient(bottom, #000000 2%, #3c3c3c 50%, #000000 100%);
+    background-image: -webkit-linear-gradient(bottom, #000000 2%, #3c3c3c 50%, #000000 100%);
+    background-image: -ms-linear-gradient(bottom, #000000 2%, #3c3c3c 50%, #000000 100%);
+    -webkit-border-top-right-radius: 7px;
+    -webkit-border-bottom-right-radius: 0;
+    -webkit-border-bottom-left-radius: 0;
+    -webkit-border-top-left-radius: 0;
+    -moz-border-radius-topright: 7px;
+    -moz-border-radius-bottomright: 0;
+    -moz-border-radius-bottomleft: 0;
+    -moz-border-radius-topleft: 0;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    padding: 0 12px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    border: 5px solid #555;
+    -moz-box-shadow: inset 0 4px 0 rgba(255, 255, 255, 0.2);
+    -webkit-box-shadow: inset 0 4px 0 rgba(255, 255, 255, 0.2);
+    box-shadow: inset 0 4px 0 rgba(255, 255, 255, 0.2);
+    -moz-text-shadow: 0 3px 3px #000000;
+    -webkit-text-shadow: 0 3px 3px #000000;
+    text-shadow: 0 3px 3px #000000;
+}*/
+       
+#CDT .line {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    top: 50%;
+    left: 0;/*
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);*/
+}
+       
+.caption {
+   font-size: 15px;
+   position: absolute;
+   bottom: -30px;
+   left: 0;
+   text-align: center;
+   width: 100%;
+   color: #fff;
+}
+
+
+/********************************
+Us Styles
+*********************************/
+#restaurant-description-1 {
+	position: relative;
+	background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/wedding-rings-marry-gold-jewellery-before-romance-deco-white.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: cover; /* Современные браузеры */
+}
+
+#us-section {
+	text-align: center;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+blockquote {
+	font-style: italic;
+	font-weight: 400;
+	line-height: 150%;
+}
+
+cite {
+	display: block;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+blockquote div:before {
+	content: "\201D";
+	font-size: 150%;
+}
+
+blockquote div:after {
+	content: "\201D";
+	font-size: 150%;
+	line-height: 100%;
+}
+
+cite img {
+	display: inline-block;
+	width: 300px;
+	border: 2px solid #fff;
+	border-radius: 50%;
+}
+
+.logo-image {
+	display: inline-block;
+	width: 500px;
+	border: 2px solid #fff;
+	border-radius: 50%;
+}
+
+#restaurant-description-1 h4 {
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	color: #0000CD;
+}
+
+#restaurant-description-1 h3 {
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	color: #8B0000;
+	font-weight: bold;
+	margin-top: -5px;
+	margin-bottom: -2px;
+}
+/*********************** 
+ * dress kod section
+ * **********************/
+#restaurant-description {
+margin-top: -20px;
+background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/wedding-rings-marry-gold-jewellery-before-romance-deco-white.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: cover; /* Современные браузеры */
+  }
+
+.fon-restaurant {
+	background-image: -webkit-linear-gradient(rgba(188,143,143, 0.7), rgba(0, 0, 128, 0.6));
+	background-image: -o-linear-gradient(rgba(188,143,143, 0.7),  rgba(0, 0, 128, 0.6));
+	background-image: linear-gradient(rgba(188,143,143, 0.7),  rgba(0, 0, 128, 0.6));
+ 	color: #000;
+ 	opacity: 0.7;
+
+
+}
+
+#restaurant-description p {
+	font-style: italic;
+	text-align: center;
+	font-size: 120%;
+
+}
+
+
+.features-icon {
+	font-size: 300%;
+	color: #C0C0C0;
+	margin-bottom: 20px;
+	}
+
+.red {
+  background-color: rgb(255,42,42);
+
+}
+
+.blue {
+  background-color: rgb(0, 0, 139);
+}
+
+
+.sphere {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 500%;
+  position: relative;
+  box-shadow: inset -10px -10px 100px #000, 10px 10px 20px black, inset 0px 0px 10px black;
+  display: inline-block;
+  margin: 5%;
+
+}
+.sphere::after {
+  background-color: rgba(255, 255, 255, 0.3);
+  content: '';
+  height: 45%;
+  width: 12%;
+  position: absolute;
+  top: 4%;
+  left: 15%;
+  border-radius: 50%;
+  transform: rotate(40deg);
+}
+
+.outsphere {
+margin-left: 250px;
+margin-right: 300px;
+text-align: center;
+background-color: #f4eded;
+}
+
+
+
+
+
+/********************************
+us Images Styles 
+*********************************/
+
+#food-images-section div {
+  width: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/wedding-rings-marry-gold-jewellery-before-romance-deco-white.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: cover; /* Современные браузеры */
+	
+	margin-bottom: 0;
+}
+
+#food-images-section p {
+	color: #565252;
+	opacity: 0.9;
+	text-align: center;
+	font-style: italic;
+	letter-spacing: 4px;
+	word-spacing: 5px;
+	font-size: 120%;
+	border: 10px solid #DCDCDC;
+	border-radius: 20px 30px;
+}
+
+
+.images-container {
+	list-style: none;
+	width: 100%;
+	background-color: #f4eded;
+}
+
+.images-container li {
+	display: block;
+	float: left;
+	width: 25%;
+}
+
+.food-image {
+	width: 100%;
+	overflow: hidden;
+	background: #DCDCDC;
+	border-top: none; border-bottom: none; border-radius: 30px/90px;
+	border: 10px dotted #DDA0DD;
+}
+
+.food-image img {
+	opacity: 0.7;
+	width: 100%;
+	height: auto;
+	-webkit-transform: scale(1.2);
+	    -ms-transform: scale(1.2);
+	        transform: scale(1.2);
+	-webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+	transition: opacity 0.5s, -webkit-transform 0.5s;
+	-o-transition: transform 0.5s, opacity 0.5s;
+	transition: transform 0.5s, opacity 0.5s;
+	transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
+}
+
+.food-image img:hover {
+	opacity: 1;
+	-webkit-transform: scale(1.05);
+	    -ms-transform: scale(1.05);
+	        transform: scale(1.05);
+}
+
+
+/********************************
+Features Styles
+*********************************/
+
+/*#headline-text {
+	text-align: center;
+	margin-bottom: 20px;
+	margin-right: 20px;
+	margin-left: 20px;
+	font-size: 100%;
+}
+
+.features-icon {
+	font-size: 300%;
+	color: #800000;
+	margin-bottom: 20px;
+}
+
+blockquote {
+	font-style: italic;
+	font-weight: 100;
+	line-height: 150%;
+}
+
+cite {
+	display: block;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+blockquote div:before {
+	content: "\201D";
+	font-size: 300%;
+}
+
+blockquote:after {
+	content: "\201D";
+	font-size: 300%;
+	line-height: 150%;
+}
+
+cite img {
+	display: inline-block;
+	width: 100px;
+	border: 2px solid #800000;
+	border-radius: 50%;
+}
+
+
+
+/********************************
+How To Order Styles
+*********************************/
+
+/*#phone-image {
+	width: 60%;
+}
+
+#phone-image-container {
+	margin-left: 10%;
+	margin-right: 3%;
+}
+
+.order-step {
+	margin-top: 100px;
+}
+
+.order-step div {
+	color: #81E0FD;
+	border: 2px solid #81E0FD;
+	width: 50px;
+	height: 50px;
+	border-radius: 150px;
+	text-align: center;
+	padding: 5px;
+	font-size: 150%;
+	display: inline-block;
+	float: left;
+	margin-right: 20px;
+}
+
+.order-step p {
+	padding-top: 5px;
+}
+
+.app-button img {
+	height: 50px;
+	margin-right: 10px;
+}
+
+.order-step:last-of-type {
+	margin-bottom: 100px;
+}
+
+/********************************
+Cities Styles
+*********************************/
+
+#cities-section h2 {
+	color: #E6E6FA;
+	margin-top: -30px;
+}
+
+#cities-section h3 {
+	color: #E6E6FA;
+	font-size: 150%;
+	margin-top: -5px;
+}
+
+#cities-section i {
+	font-size: 150%;
+	color: #E6E6FA;
+}
+
+#cities-section .float-clearing {
+	text-align: center;
+}
+
+#cities-section p {
+	color: #E6E6FA;
+	font-size: 120%;
+	margin-top: 5px;
+}
+
+.col-3 img {
+	width: 100%;
+}
+
+.city-info {
+	font-weight: 300;
+	letter-spacing: 1px;
+	word-spacing: 2px;
+	font-size: 70%;
+}
+
+.info-icon {
+	display: inline-block;
+	text-align: center;
+	width: 30px;
+	color: #81E0FD; 
+}
+
+#cities-section {
+	 background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.9), rgba(105, 105, 105, 0.7)), url(../images/photo_2022-05-04_01-04-43.jpg);
+	 
+  background-size: center;
+  width: 100%;
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
+
+
+}
+
+
+iframe {
+	border: 10px solid #fff;
+	border-radius: 50px;
+}
+
+/********************************
+Feedback Styles
+*********************************/
+
+/*#feedback-section {
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(../images/feedback-background-min.jpg);
+	background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/feedback-background-min.jpg);
+	background-image: -o-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/feedback-background-min.jpg);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/feedback-background-min.jpg);
+	background-size: cover;
+	color: #fff;
+	background-attachment: fixed;
+}
+
+blockquote {
+	font-style: italic;
+	font-weight: 300;
+	line-height: 150%;
+}
+
+cite {
+	display: block;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+blockquote div:before {
+	content: "\201D";
+	font-size: 300%;
+}
+
+blockquote:after {
+	content: "\201D";
+	font-size: 300%;
+	line-height: 150%;
+}
+
+cite img {
+	display: inline-block;
+	width: 100px;
+	border: 2px solid #fff;
+	border-radius: 50%;
+}
+
+/********************************
+Contact Form Styles
+*********************************/
+#contact-form-section {
+	background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/wedding-rings-marry-gold-jewellery-before-romance-deco-white.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: cover; /* Современные браузеры */
+}
+
+
+#contact-form-section p {
+	letter-spacing: 4px;
+	text-transform: unset;
+	word-spacing: 5px;
+	text-align: center;
+	font-style: italic;
+	margin-bottom: 30px;
+	font-size: 120%;
+}
+
+
+#contact-form {
+	width: 50%;
+	margin: 0 auto;
+	text-align: center;
+	background-image: -webkit-linear-gradient(rgba(188, 143, 143, 0.6), rgba(245, 222, 179, 0.6));
+	background-image: -o-linear-gradient(rgba(188, 143, 143, 0.6), rgba(245, 222, 179, 0.6));
+	background-image: linear-gradient(rgba(188, 143, 143, 0.6), rgba(245, 222, 179, 0.6));
+	border: 1px solid #A9A9A9;
+	border-radius: 140px;
+}
+
+#sendMail {
+	background-color: #A9A9A9;
+	color: #fff;
+	height: 40px;
+	width: 140px;
+	border: 2px solid #A9A9A9;
+	border-radius: 20px;
+	cursor: pointer;
+}
+
+#contact-form #text, #name, #email, #topic {
+	border-radius: 5px;
+}
+
+
+
+/********************************
+Footer Styles
+*********************************/
+
+footer {
+	text-align: center;
+	padding: 10px 0;
+	background-image: -webkit-linear-gradient(rgba(0, 0, 128, 0.6), rgba(188,143,143, 0.6));
+	background-image: -o-linear-gradient(rgba(0, 0, 128, 0.6),  rgba(188,143,143, 0.6));
+	background-image: linear-gradient(rgba(0, 0, 128, 0.6),  rgba(188,143,143, 0.6));
+	color: #fff;
+}
+
+footer p {
+	font-size: 70%;
+}
+
+#footer-nav h3 {
+	opacity: 1;
+}
+
+#footer-nav i {
+	font-size: 120%;
+	padding-right: 10px;
+	color: #fff;
+}
+
+#footer-social-links {
+	list-style: none;
+	margin-left: 30px;
+	margin-bottom: 20px;
+}
+
+#footer-social-links li {
+	display: inline-block;
+	margin-right: 30px;
+	font-size: 0.8em;
+}
+
+#footer-nav {
+	margin-bottom: 20px;
+}
+
+#footer-nav ul {
+	list-style: none;
+}
+
+#footer-nav li a:link,
+#footer-nav li a:visited {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #fff;
+	opacity: 0.5;
+	font-size: 100%;
+}
+
+#footer-nav li a:hover,
+#footer-nav li a:active {
+	opacity: 1;
+}
+
+#footer-nav h3 a:link,
+#footer-nav h3 a:visited {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 100%;
+}
+
+#footer-nav h3 a:hover,
+#footer-nav h3 a:active {
+	opacity: 1;
+}
+
+#footer-social-links li a:link,
+#footer-social-links li a:visited {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #fff;
+	opacity: 0.5;
+	font-size: 150%;
+}
+
+#footer-social-links li a:hover,
+#footer-social-links li a:active {
+	opacity: 1;
+}
+
+/********************************
+Media Query Styles
+*********************************/
+
+@media only screen and (max-width: 970px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+
+  .button-order {
+  	margin-bottom: 20px;
+  }
+
+  #contact-form {
+	width: 80%;
+	margin: 0 auto;
+  }
+
+  .mobile-nav-icon {
+  	display: inline-block;
+  }
+
+  #main-nav {
+  	float: right;
+  	margin-top: 40px;
+  	display: none;
+  }
+
+  #main-nav li {
+  	display: block;
+  	padding: 10px 0;
+  }
+
+  #main-nav li a:link,
+  #main-nav li a:visited {
+  	display: block;
+  }
+
+  #sticky-nav #main-nav li a:hover,
+	#sticky-nav #main-nav li a:active {
+		border-bottom: 0;
+	}
+
+#footer-social-links i {
+	font-size: 150%;
+}
+
+/********************************
+Animation Styles
+*********************************/
+
+.anim1,
+.anim2,
+.anim3 {
+	opacity: 0;
+}
+
+.anim1.animated,
+.anim2.animated,
+.anim3.animated {
+	opacity: 1;
+}
+
+.anim2.animated {
+	animation-duration: 0.5s;
+}
+
+
+
+
+
+
+
